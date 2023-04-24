@@ -1,22 +1,26 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .form {
-    /* border: 1px solid black;
+  /* border: 1px solid black;
     display: flex;
     flex-direction: column; */
 }
-input{
-    display: block;
-    margin-bottom: 15px;
+
+input {
+  display: block;
+  margin-bottom: 15px;
 }
+
 article {
-    padding-bottom: 10px;
-    border-bottom: 1px solid grey;
-    margin-bottom: 17px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 17px;
 }
-article p{
-    margin: 0;
+
+article p {
+  margin: 0;
 }
