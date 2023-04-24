@@ -29,8 +29,8 @@ window.onload = () => {
     books.innerHTML = store.data.map((book) => article(book)).join("")
     document.querySelectorAll(".remove").forEach((removeButton) => removeButton.onclick = (e) => remove(e))
 
-    addButton.onclick = () => {
-
+    addButton.onclick = (event) => {
+         event.preventDefault();
         let id = Math.floor(Math.random()*(999-100+1)+100);
         let book = {
             id,
@@ -42,8 +42,9 @@ window.onload = () => {
         wrapper.innerHTML= article(book)
         
         var div= wrapper.firstChild;
-        
-        div.childNodes[6].onclick = (e) => remove(e)
+        console.log(div.childNodes);
+        div.childNodes[7].onclick = (e) => remove(e)
+
         
         books.appendChild(div)
     }
