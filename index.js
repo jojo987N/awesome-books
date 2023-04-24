@@ -21,6 +21,7 @@ window.onload = () => {
      
     const article = (book) => `<article id=${book.id}>
     <p>${book.title}</p>
+    <span>by</span>
     <p>${book.author}</p>
     <button class="remove">Remove</button>
     </article>`
@@ -42,7 +43,7 @@ window.onload = () => {
         
         var div= wrapper.firstChild;
         
-        div.childNodes[5].onclick = (e) => remove(e)
+        div.childNodes[6].onclick = (e) => remove(e)
         
         books.appendChild(div)
     }
